@@ -1,2 +1,2 @@
 # Plant-Store
-Authors: Diego Morales
+Authors: Diego Morales, Cash Snell
