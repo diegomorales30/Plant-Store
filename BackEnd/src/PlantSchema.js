@@ -11,8 +11,12 @@ var plantSchema = new mongoose.Schema({
 
 
 // Bush 
-plantSchema.statics.listAllBush = function() {}
+plantSchema.statics.listAllBush = function() {};
 // Succulent
-plantSchema.statics.listAllSucculent = function() {}
+plantSchema.statics.listAllSucculent = function() {};
 // Bedded
-plantSchema.statics.listAllBedded = function() {}
+plantSchema.statics.listAllBedded = function() {};
+
+var plantModel = mongoose.model('plant', plantSchema);
+
+module.exports = plantModel;
