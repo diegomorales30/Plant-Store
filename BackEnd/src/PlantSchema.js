@@ -1,12 +1,13 @@
 var mongoose = require("mongoose");
 
 var plantSchema = new mongoose.Schema({
-    plantType: String,
-    plantName: String,
-    price: Number,
-    advice: [String],
-    picture: String,
-    popular: Number
+    Type: String,
+    PlantName: String,
+    Price: String,
+    Quantity: Number,
+    Advice: [String],
+    Picture: String,
+    Popular: Number
 });
 
 
