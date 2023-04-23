@@ -1,0 +1,192 @@
+"Type":"Bedding Plants"
+"PlantName":"Marigolds"
+"Price:":"$.50"
+"Quantity": 35
+"Advice":["Die in the winter","Reseed for the Spring","Water once a day"]
+"Popular": 10
+
+"Type":"Bedding Plants"
+"PlantName":"Gazania"
+"Price:":"$1.00"
+"Quantity": 20
+"Advice":["Lives through all the seasons","Water once a day]
+"Popular": 15
+
+"Type":"Bedding Plants"
+"PlantName":"Cock's Comb"
+"Price:":"$1.00"
+"Quantity": 40
+"Advice":["Die in the winter","Replant in the Spring","Water once a day]
+"Popular": 18
+
+"Type":"Bedding Plants"
+"PlantName":"Hypoestes Splash Select Mix"
+"Price:":"$1.00"
+"Quantity": 15
+"Advice":["Die in the winter","Reseed for the Spring","Water once a day]
+"Popular": 20
+
+
+"Type":"Bedding Plants"
+"PlantName":"Moss Rose Portulace"
+"Price:":"$1.00"
+"Quantity": 35
+"Advice":["Die in the winter","Reseeds in the Spring","Water once a day]
+"Popular": 15
+
+"Type":"Bedding Plants"
+"PlantName":"Geraniums"
+"Price:":"$5.00"
+"Quantity": 35
+"Advice":["Cover the plant in the winter","Don't over water"]
+"Popular": 12
+
+"Type":"Bedding Plants"
+"PlantName":"Carnations"
+"Price:":"$1.25"
+"Quantity": 35
+"Advice":["Live through all the seasons","Water once a day]
+"Popular": 18
+
+"Type":"Bedding Plants"
+"PlantName":"Columbine"
+"Price:":"$3.00"
+"Quantity": 35
+"Advice":["Live through all the seasons","Water once a day]
+"Popular": 19
+
+"Type":"Bedding Plants"
+"PlantName":"Dianthus"
+"Price:":"$1.00"
+"Quantity": 35
+"Advice":["Live through all the seasons","Water once a day]
+"Popular": 25
+
+"Type":"Bedding Plants"
+"PlantName":"Double Petunia"
+"Price:":"$1.00"
+"Quantity": 35
+"Advice":["Die in winter","replant in the Spring","Water once a day]
+"Popular": 30
+
+
+
+"Type":"Succulent Plants"
+"PlantName":"Golden Borrowl Catuse"
+"Price:":"$6.00"
+"Quantity": 20
+"Advice":["Servives all seasons","Don't over water"]
+"Popular": 14
+
+"Type":"Succulent Plants"
+"PlantName":"Propeller"
+"Price:":"$8.00"
+"Quantity": 15
+"Advice":["Leave out side in plastic container for winter","Don't over water"]
+"Popular": 12
+
+"Type":"Succulent Plants"
+"PlantName":"Camp Fire"
+"Price:":"$4.00"
+"Quantity": 30
+"Advice":["Leave out side in plastic container for winter","Don't over water"]
+"Popular": 25
+
+"Type":"Succulent Plants"
+"PlantName":"Jade"
+"Price:":"$4.00"
+"Quantity": 25
+"Advice":["Bring indoor for winter","Don't over water"]
+"Popular": 25
+
+"Type":"Succulent Plants"
+"PlantName":"Echeveria"
+"Price:":"$6.00"
+"Quantity": 30
+"Advice":["Leave out side in plastic container for winter","Don't over water"]
+"Popular": 19
+
+"Type":"Succulent Plants"
+"PlantName":"String of Perls"
+"Price:":"$10.00"
+"Quantity": 15
+"Advice":["Bring in for the winter months","Dont over water the plant"]
+"Popular": 25
+
+"Type":"Succulent Plants"
+"PlantName":"Ice Plant"
+"Price:":"$4.00"
+"Quantity": 40
+"Advice":["Bring in for the winter months","Dont over water the plant"]
+"Popular": 10
+
+"Type":"Succulent Plants"
+"PlantName":"Ruby Neckless"
+"Price:":"$10.00"
+"Quantity": 10
+"Advice":["Bring in for the winter months","Dont over water the plant"]
+"Popular": 23
+
+"Type":"Succulent Plants"
+"PlantName":"Bad Hair Day"
+"Price:":"$35.00"
+"Quantity": 40
+"Advice":["Can survive all seasons","Dont over water"]
+"Popular": 12
+
+"Type":"Succulent Plants"
+"PlantName":"Aeonium Black Rose"
+"Price:":"$5.00"
+"Quantity": 10
+"Advice":["Bring in for the winter","Dont over water"]
+"Popular": 11
+
+
+"Type":"Succulent Plants"
+"PlantName":"Sansevieria"
+"Price:":"$8.00"
+"Quantity": 10
+"Advice":["Bring in for the winter","Dont water from November - March all other months you can water"]
+"Popular": 18
+
+"Type":"Succulent Plants"
+"PlantName":"Mangava"
+"Price:":"$35.00"
+"Quantity": 25
+"Advice":["Can survie all seasons","Dont over water"]
+"Popular": 20
+
+"Type":"Succulent Plants"
+"PlantName":"Decrative Alo"
+"Price:":"$6.00"
+"Quantity": 15
+"Advice":["Bring in for the winter seasons","Dont over water the plant"]
+"Popular": 23
+
+"Type":"Succulent Plants"
+"PlantName":"Medusa"
+"Price:":"$5.00"
+"Quantity": 35
+"Advice":["Bring in for the winter months","Dont over water the plant"]
+"Popular": 12
+
+"Type":"Succulent Plants"
+"PlantName":"Echeveria Can Can"
+"Price:":"$6.00"
+"Quantity": 30
+"Advice":["Put in plactic container in winter","Dont over water the plant"]
+"Popular": 13
+
+"Type":"Succulent Plants"
+"PlantName":"Crown of Thorns"
+"Price:":"$10.00"
+"Quantity": 15
+"Advice":["Bring in side for winter","Dont over water the plant"]
+"Popular": 11
+
+"Type":"Succulent Plants"
+"PlantName":"String of Tears"
+"Price:":"$10.00"
+"Quantity": 15
+"Advice":["Bring in for the winter months","Dont over water the plant"]
+"Popular": 16
