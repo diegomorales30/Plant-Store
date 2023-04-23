@@ -20,8 +20,12 @@ app.use(express.json());
 app.set('views', path.join(__dirname, 'FrontEnd/views'));
 app.use(express.static(path.join(__dirname, 'FrontEnd')));
 
-app.get('/', async (req, res) => {
+app.get('/succulents', async (req, res) => {
     res.sendFile(path.join(__dirname, 'FrontEnd/views/succulent.html'));
+})
+
+app.get('/beddings', async (req, res) => {
+    res.sendFile(path.join(__dirname, 'FrontEnd/views/bedding.html'));
 })
 
 app.post('/add', function(req, res) {
