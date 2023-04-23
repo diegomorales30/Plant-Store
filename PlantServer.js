@@ -20,7 +20,7 @@ app.use(express.json());
 app.set('views', path.join(__dirname, 'FrontEnd/views'));
 app.use(express.static(path.join(__dirname, 'FrontEnd')));
 
-app.get('/plants', async (req, res) => {
+app.get('/', async (req, res) => {
     res.sendFile(path.join(__dirname, 'FrontEnd/views/succulent.html'));
 })
 
@@ -38,7 +38,7 @@ app.post('/add', function(req, res) {
 // Ex: http://localhost:3000/plant?img=goldenbarrowlcatuse
 app.get("/plant", function(req, res) {
     // Query for plant by image name
-    plantModel.find({picture : req.query.img}).then(function(plant) {
+    plantModel.find({Picture : req.query.img}).then(function(plant) {
         res.render("plantInfo", {plant:plant});
     }).catch(function(error) {
         res.error("Something went wrong!" + error );
