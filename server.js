@@ -31,4 +31,3 @@ app.listen(port, function(){
 })
 
 app.use('/Users', usersRouter)
-app.listen(3000)
