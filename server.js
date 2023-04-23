@@ -18,5 +18,5 @@ app.get('/', async (req, res) => {
     res.render('FrontEnd/views/index', {books: books})
 })
 
-app.use('users', usersRouter)
+app.use('users/index', usersRouter)
 app.listen(3000)
