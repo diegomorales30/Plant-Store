@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const User = require('./BackEnd/src/User')
-const usersRouter = require('./BackEnd/src/Users')
+const User = require('/BackEnd/src/User')
+const usersRouter = require('/BackEnd/src/Users')
 const methodOverride = require('method-override')
 const app = express()
 
@@ -18,5 +18,5 @@ app.get('/', async (req, res) => {
     res.render('FrontEnd/views/index', {books: books})
 })
 
-app.use('users', usersRouter)
+app.use('users/index', usersRouter)
 app.listen(3000)
