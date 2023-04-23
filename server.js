@@ -30,5 +30,5 @@ app.listen(port, function(){
     console.log("App listening on port " + port + "!")
 })
 
-app.use('/users', usersRouter)
+app.use('/Users', usersRouter)
 app.listen(3000)
