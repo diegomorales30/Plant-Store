@@ -10,11 +10,11 @@ var plantSchema = new mongoose.Schema({
 });
 
 
-// Bush 
+// Implement later, query for all bushes
 plantSchema.statics.listAllBush = function() {};
-// Succulent
+// Implement later, query for all succulents
 plantSchema.statics.listAllSucculent = function() {};
-// Bedded
+// Implement later, query for all bedded
 plantSchema.statics.listAllBedded = function() {};
 
 var plantModel = mongoose.model('plant', plantSchema);
