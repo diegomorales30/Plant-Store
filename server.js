@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'FrontEnd')));
 
 app.get('/', async (req, res) => {
     const users = await User.find().sort({createdAt: 'desc'})
-    res.render('FrontEnd/views/index', {User: Users})
+    res.render('index', {User: Users})
 })
 
 app.listen(port, function(){
