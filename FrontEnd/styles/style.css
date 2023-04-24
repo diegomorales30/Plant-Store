@@ -326,3 +326,13 @@ header{
     text-decoration: underline;
 
 }
+
+.Text-Box{
+
+    width: 100%;
+    height: 40%;
+    padding-right: 10%;
+    background: fixed white;
+    text-align: center;
+
+}
