@@ -20,6 +20,7 @@ app.use(express.urlencoded())
 app.use(express.json())
 app.set('views', path.join(__dirname, 'FrontEnd/views'));
 app.use(express.static(path.join(__dirname, 'FrontEnd')));
+app.use(express.static(path.join(__dirname, 'BackEnd/src')))
 
 app.get('/', async (req, res) => {
     const users = await User.find().sort({createdAt: 'desc'})
