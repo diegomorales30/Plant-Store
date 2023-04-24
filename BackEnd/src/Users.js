@@ -11,7 +11,7 @@ router.post('/', async (req, res) =>{
     })
     try{
         user = await user.save()
-        res.redirect(`/users/${user}`)
+        res.redirect(`/About`)
     } catch(e){
         //res.render('users/new', {user: user})
     }

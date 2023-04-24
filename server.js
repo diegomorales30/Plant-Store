@@ -32,3 +32,7 @@ app.listen(port, function(){
 })
 
 app.use('/Users', usersRouter)
+
+app.get('/About', async (req, res) =>{
+    res.sendFile(path.join(__dirname, 'FrontEnd/views/About.html'));
+})
