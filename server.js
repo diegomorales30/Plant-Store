@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const usersRouter = require('./BackEnd/src/Users');
+const plantsRouter = require('./BackEnd/src/PlantServer');
 const app = express();
 const port = 3000;
 
@@ -32,6 +33,7 @@ app.listen(port, function(){
 })
 
 app.use('/Users', usersRouter)
+app.use(plantsRouter)
 
 app.get('/About', async (req, res) =>{
     res.sendFile(path.join(__dirname, 'FrontEnd/views/About.html'));
