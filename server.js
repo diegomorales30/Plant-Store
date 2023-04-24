@@ -1,9 +1,9 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const path = require('path')
-const usersRouter = require('./BackEnd/src/Users')
-const app = express()
-const port = 3000
+const express = require('express');
+const mongoose = require('mongoose');
+const path = require('path');
+const usersRouter = require('./BackEnd/src/Users');
+const app = express();
+const port = 3000;
 
 async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017')
