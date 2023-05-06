@@ -16,7 +16,18 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+
+    cart: [{
+        Type: String,
+        PlantName: String,
+        Price: String,
+        Quantity: Number,
+        Advice: [String],
+        Picture: String,
+        Popular: Number
+    }]
+
 
 })
 
