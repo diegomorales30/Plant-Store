@@ -35,4 +35,20 @@ app.get("/plant", function(req, res) {
     });
 });
 
+//Ex http://localhost:3000/user?=name&&plant=picturename&&usernumberwant=3
+app.post("/addtocart",function(req,res){
+    var plant = plantModel.find({Picture:req.query.plant});
+    var user = userModel.find({userName:req.query.user});
+    var plantlimit = plant.quantity;
+    if (req.query.useramount > plantlimit){
+        res.send("User demand is greater than quanity aviable");
+    }
+    else{
+        user.cart.push(plant);
+        User.updateOne({userName:user.userName},{cart:user.cart},function(req,res){
+            res.send("Plant was added to account");
+        });
+    }
+});
+
 module.exports = app;
