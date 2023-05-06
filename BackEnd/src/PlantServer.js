@@ -35,10 +35,10 @@ app.get("/plant", function(req, res) {
     });
 });
 
-//Ex http://localhost:3000/user?=name&&plant=picturename&&usernumberwant=3
+//Ex http://localhost:3000/user?=name&&plantpid=picturename&&useramount=3
 app.post("/addtocart",function(req,res){
-    var plant = plantModel.find({Picture:req.query.plant});
-    var user = userModel.find({username:req.query.user});
+    var plant = plantModel.find({Picture:req.query.plantpid});
+    var user = userModel.find({username:req.query.userid});
     var plantlimit = plant.quantity;
     if (req.query.useramount > plantlimit){
         res.send("User demand is greater than quanity aviable");
