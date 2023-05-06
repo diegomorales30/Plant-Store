@@ -23,7 +23,7 @@ router.post('/', async (req, res) =>{
 router.get('/:email', async (req, res) =>{
     const user = await User.findOne({email : req.query.email, password : req.query.password})
     if(user == null) res.redirect('/')
-    res.render('/About', {user:user})
+    res.render('/About/?username=' + user.username, {user:user})
 })
 
 
