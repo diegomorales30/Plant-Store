@@ -31,7 +31,7 @@
 
             <h2>Login</h2>
 
-            <form action="#">
+            <form action="/users" method="get">
 
                 <div class="input-box">
                     
@@ -39,7 +39,7 @@
                         <ion-icon name="mail-outline"></ion-icon>
                     </span>
                     
-                    <input type="email" required>
+                    <input required value="<% users.email %>" type="text" name="email" id="email">
                     <label>Email</label>
                 
                 </div>
@@ -50,7 +50,7 @@
                         <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
                     
-                    <input type="password" required>
+                    <input required value="<% users.password %>" type="password" name="password" id="password">
                     <label>Password</label>
                 
                 </div>
