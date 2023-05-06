@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Plant Store</h2>
+        <nav class="navigation">
+            <a href="http://localhost:3000/">Home</a>
+            <a href="http://localhost:3000/About">About</a>
+            <a href="#">Contact</a>
+            <a href="http://localhost:3000/succulents">Succulent</a>
+            <a href="http://localhost:3000/beddings">Bedding</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <% for (plant of user.cart) { %> 
+        <div class="cartItem">
+            <div class="cartBody">
+                <a href="plant?id=<%plant.PlantName%>">
+                    <img  class = "cartImg" src="/img/<%=plant.Type + "/" + plant[0].Picture%>.jpg" alt=" <%= plant[0].PlantName %>"  height="350" width= "400">
+                </a>
+                <div class="cartItemQuantity">Quantity: <%= plant.Quantity %></div>
+                <div class="cartItemPrice">Price: <%= plant.Price * plant.Quantity %></div>
+            </div>
+        </div>
+    <% }) %>
+
+</body>
+</html>
