@@ -17,10 +17,15 @@
                 <a href="http://localhost:3000/succulents?username=<%= user.username %>">Succulent</a>
                 <a href="http://localhost:3000/beddings?username=<%= user.username %>">Bedding</a>
                 <button class="btnLogin-popup" onclick="location.href='http://localhost:3000/cart?username=<%= user.username %>';" >Cart</button>
+                <link rel="stylesheet" href="../styles/style.css">
             </nav>  
             <% } %>
     </header>
-
+    <script>
+        var plantAmount = parseFloat(plant.Quantity);
+        var plantPrice = parseFloat(plant.Price) * plantAmount;
+        var cartItemPrice = document.getElementsByClassName(cartItemPrice).innerHTML("price:" + plantPrice);
+    </script>
     <% for (plant of user.cart) { %> 
         <div class="cartItem">
             <div class="cartBody">
