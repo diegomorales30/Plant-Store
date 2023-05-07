@@ -10,15 +10,27 @@
 </head>
 <body style="background: fixed white;">
     <header>
-        <h2 class="logo">Plant Store</h2>
-        <nav class="navigation">
-            <a href="http://localhost:3000/">Home</a>
-            <a href="http://localhost:3000/About">About</a>
-            <a href="#">Contact</a>
-            <a href="http://localhost:3000/succulents">Succulent</a>
-            <a href="http://localhost:3000/beddings">Bedding</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
+        <% if (locals.user) { %>
+            <h2 class="logo">Welcome, <%= user.username %>!</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/?username=<%= user.username %>">Home</a>
+                <a href="http://localhost:3000/About?username=<%= user.username %>">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents?username=<%= user.username %>">Succulent</a>
+                <a href="http://localhost:3000/beddings?username=<%= user.username %>">Bedding</a>
+                <button class="btnLogin-popup" onclick="location.href='http://localhost:3000/cart?username=<%= user.username %>';" >Cart</button>
+            </nav>  
+        <% } else { %>
+            <h2 class="logo">Plant Store</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/">Home</a>
+                <a href="http://localhost:3000/About">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents">Succulent</a>
+                <a href="http://localhost:3000/beddings">Bedding</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        <% } %>
     </header>
 
         <!--This is will the filter will go -->
@@ -29,11 +41,15 @@
 
         <!--grid-->
     
-    <div class="container align-content-center">
+    <div class="container align-content-center" script="">
         <div class="row">
             <div class="col">
                 <div class="align-content-center">
-                    <a href="plant?id=goldenbarrowlcatuse">
+                    <% if (locals.user) { %>
+                        <a href="plant?username=<%=user.username%>&id=goldenbarrowlcatuse" >
+                    <% } else { %>
+                        <a href="plant?id=goldenbarrowlcatuse" >
+                    <% } %>
                         <img class = "rounded mx-auto d-block" id="Golden-Barrowl" src="../img/succulent/goldenbarrowlcatuse.jpg" alt="Golden Barrow Cactuse"  height="350" width= "400">
                     </a>   
                     <h1 class="text-center">Goldon Barrow Catuse</h1>

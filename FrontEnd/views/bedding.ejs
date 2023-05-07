@@ -10,15 +10,27 @@
 </head>
 <body style="background: fixed white;">
     <header>
-        <h2 class="logo">Plant Store</h2>
-        <nav class="navigation">
-            <a href="http://localhost:3000/">Home</a>
-            <a href="http://localhost:3000/About">About</a>
-            <a href="#">Contact</a>
-            <a href="http://localhost:3000/succulents">Succulent</a>
-            <a href="http://localhost:3000/beddings">Bedding</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
+        <% if (locals.user) { %>
+            <h2 class="logo">Welcome, <%= user.username %>!</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/?username=<%= user.username %>">Home</a>
+                <a href="http://localhost:3000/About?username=<%= user.username %>">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents?username=<%= user.username %>">Succulent</a>
+                <a href="http://localhost:3000/beddings?username=<%= user.username %>">Bedding</a>
+                <button class="btnLogin-popup" onclick="location.href='http://localhost:3000/cart?username=<%= user.username %>';" >Cart</button>
+            </nav>  
+        <% } else { %>
+            <h2 class="logo">Plant Store</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/">Home</a>
+                <a href="http://localhost:3000/About">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents">Succulent</a>
+                <a href="http://localhost:3000/beddings">Bedding</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        <% } %>
     </header>
 
         <!--This is will the filter will go -->
@@ -34,7 +46,11 @@
             <div class="col">
                 <div class="align-content-center">
                     <div>
+                    <% if (locals.user) { %>
+                        <a href="plant?username=<%=user.username%>&id=marigolds" >
+                    <% } else { %>
                         <a href="plant?id=marigolds">
+                    <% } %>
                             <img class = "rounded mx-auto d-block"  src="../img/bedding/marigolds.jpg" alt="Marigolds"  height="300" width= "350">
                         </a>
                        

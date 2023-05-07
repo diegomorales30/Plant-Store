@@ -9,16 +9,28 @@
 </head>
 <body>
     <header>
-        <h2 class="logo">"<% users.username %>"</h2>
-        <nav class="navigation">
-            <a href="http://localhost:3000/">Home</a>
-            <a href="http://localhost:3000/About">About</a>
-            <a href="#">Contact</a>
-            <a href="http://localhost:3000/succulents">Succulent</a>
-            <a href="http://localhost:3000/beddings">Bedding</a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
+        <% if (locals.user) { %>
+            <h2 class="logo">Welcome, <%= user.username %>!</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/?username=<%= user.username %>">Home</a>
+                <a href="http://localhost:3000/About?username=<%= user.username %>">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents?username=<%= user.username %>">Succulent</a>
+                <a href="http://localhost:3000/beddings?username=<%= user.username %>">Bedding</a>
+                <button class="btnLogin-popup" onclick="location.href='http://localhost:3000/cart?username=<%= user.username %>';" >Cart</button>
+            </nav>  
+        <% } else { %>
+            <h2 class="logo">Plant Store</h2>
+            <nav class="navigation">
+                <a href="http://localhost:3000/">Home</a>
+                <a href="http://localhost:3000/About">About</a>
+                <a href="#">Contact</a>
+                <a href="http://localhost:3000/succulents">Succulent</a>
+                <a href="http://localhost:3000/beddings">Bedding</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        <% } %>
+        </header>
     <h1>
         <h3 class="Text-Box">
             About Us <br>

@@ -1,17 +1,20 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var app = express.Router();
+const User = require('./User')
 const path = require('path');
 const port = 3000;
 
 var plantModel = require("./PlantSchema");
 
 app.get('/succulents', async (req, res) => {
-    res.sendFile(path.join(__dirname, '../../FrontEnd/views/succulent.html'));
+    const user = await User.findOne({username : req.query.username});     
+    res.render('succulent', {user:user})
 })
 
 app.get('/beddings', async (req, res) => {
-    res.sendFile(path.join(__dirname, '../../FrontEnd/views/bedding.html'));
+    const user = await User.findOne({username : req.query.username});     
+    res.render('bedding', {user:user})
 })
 
 app.post('/add', function(req, res) {
@@ -26,28 +29,26 @@ app.post('/add', function(req, res) {
 
 // Request should be made with image name in parameters
 // Ex: http://localhost:3000/plant?id=goldenbarrowlcatuse
-app.get("/plant", function(req, res) {
-    // Query for plant by image name
-    plantModel.find({Picture : req.query.id}).then(function(plant) {
-        res.render("plantInfo", {plant:plant});
-    }).catch(function(error) {
-        res.error("Something went wrong!" + error );
-    });
+app.get("/plant", async (req, res) => {
+    const user = await User.findOne({username : req.query.username});     
+    const plant = await plantModel.findOne({Picture : req.query.id});
+    res.render("plantInfo", {plant:plant, user:user});
 });
 
 //Ex http://localhost:3000/user?=name&&plantpid=picturename&&useramount=3
-app.post("/addtocart",function(req,res){
-    var plant = plantModel.find({Picture:req.query.plantpid});
-    var user = userModel.find({username:req.query.userid});
-    var plantlimit = plant.quantity;
-    if (req.query.useramount > plantlimit){
+app.get("/addtocart", async function(req,res) {
+    var plant = await plantModel.findOne({Picture:req.query.plantpid}).lean();
+    var user = await User.findOne({username:req.query.user}).lean();
+    var plantlimit = plant.Quantity;
+    if (req.query.useramount > plantlimit) {
         res.send("User demand is greater than quanity aviable");
     }
-    else{
+    else {
+        plant.Quantity = req.query.useramount;
         user.cart.push(plant);
-        User.updateOne({username:user.userName},{cart:user.cart},function(req,res){
+        User.updateOne({username:user.username},{cart:user.cart}).then( function() {
             res.send("Plant was added to account");
-        });
+        })
     }
 });
 

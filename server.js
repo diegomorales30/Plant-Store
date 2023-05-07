@@ -35,6 +35,12 @@ app.listen(port, function(){
 app.use('/Users', usersRouter)
 app.use(plantsRouter)
 
-app.get('/About', async (req, res) =>{
-    res.sendFile(path.join(__dirname, 'FrontEnd/views/About.html'));
-})
+app.get('/About', async (req, res) => {
+    const user = await User.findOne({username:req.query.username});
+    res.render('About', {user:user});
+});
+
+app.get('/cart', async (req, res) => {
+    const user = await User.findOne({username : req.query.username});     
+    res.render('cart', {user:user});
+});
