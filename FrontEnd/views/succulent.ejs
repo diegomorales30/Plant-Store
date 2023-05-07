@@ -60,9 +60,9 @@
                 <div class="align-content-center">
                     <% if(locals.user){ %>
                         <a href="plant?username=<%=user.username%>&id=propellersucculent">
-                    }else{
+                   <% }else{%>
                         <a href="plant?id=propellersucculent">
-                    }
+                    <%}%>
                         <img class = "rounded mx-auto d-block" src="../img/succulent/propellersucculent.jpg" alt="Propeller Succulents"  height="350" width= "400">
                     </a>
                     <h1 class="text-center">Propeller Succulents</h1>
@@ -73,9 +73,9 @@
                 <div class="m-2 align-content-center">
                     <% if(locals.user){ %>
                         <a href="plant?username=<%=user.username%>&id=campfire">
-                    }else{
+                    <%}else{%>
                         <a href="plant?id=campfire">
-                    }
+                    <%}%>
                         <img class = "rounded mx-auto d-block" src="../img/succulent/campfire.jpg" alt="Camp Fire" height="350" width= "400">
                     </a>
                     <h1 class="text-center">Camp Fire</h1>
@@ -91,9 +91,9 @@
                     <div>
                         <% if(locals.user){ %>
                             <a href="plant?username=<%=user.username%>&id=jade">
-                        }else{
+                       <% }else{%>
                             <a href="plant?id=jade">
-                        }
+                       <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/jade.jpg" alt=">Jade" height="350" width= "400">
                         </a>
                     </div>
@@ -105,9 +105,9 @@
                 <div class="m-2 align-content-center">
                     <% if(locals.user){ %>
                         <a href="plant?username=<%=user.username%>&id=echeveria">
-                    }else{
+                   <%}else{%>
                         <a href="plant?id=echeveria">
-                    }
+                   <%}%>
                         <img class = "rounded mx-auto d-block" src="../img/succulent/echeveria.jpg" alt=">Echeveria" height="350" width= "400">
                     </a>
                     
@@ -118,11 +118,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=stringofperls">
-                        }else{
+                       <%}else{%>
                             <a href="plant?id=stringofperls">
-                        }
+                       <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/stringofperls.jpg" alt="String of Perls" height="350" width= "400">
                         </a>
                         
@@ -140,9 +140,9 @@
                     <div>
                         <% if(locals.user){ %>
                             <a href="plant?username=<%=user.username%>&id=iceplant">
-                        }else{
+                       <%}else{%>
                             <a href="plant?id=iceplant">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block"  src="../img/succulent/iceplant.jpg" alt="Ice Plant" height="350" width= "400"">
                         </a>
                        
@@ -154,11 +154,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <% if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=rubyneckless">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=rubyneckless">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/rubyneckless.jpg" alt="Ruby Neckless" height="350" width= "400"">
                         </a>
                         
@@ -172,9 +172,9 @@
                     <div>
                         <% if(locals.user){ %>
                             <a href="plant?username=<%=user.username%>&id=badhairday">
-                        }else{
+                       <%}else{%>
                             <a href="plant?id=badhairday">
-                        }
+                       <%}%>
                             <img class = "rounded mx-auto d-block"  src="../img/succulent/badhairday.jpg" alt="Bad Hair Day" height="350" width= "400"">
                         </a>
                     </div>
@@ -189,11 +189,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=aeoniumblackrose">
-                        }else{
+                       <%}else{%>
                             <a href="plant?id=aeoniumblackrose">
-                        }
+                       <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/aeoniumblackrose.jpg" alt="Aeonium Black Rose" height="350" width= "400"">
                         </a>
                     </div>
@@ -204,11 +204,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=sansevieria">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=sansevieria">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/sansevieria.jpg" alt="Sanservieria" height="350" width= "400"">
                         </a> 
                     </div>
@@ -219,11 +219,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=mangava">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=mangava">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/mangava.jpg" alt="Mangava" height="350" width= "400"">
                         </a>
                     </div>
@@ -238,11 +238,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=decrativealo">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=decrativealo">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/decrativealo.jpg" alt="Decrative Alo" height="350" width= "400"">
                         </a>   
                     </div>
@@ -253,11 +253,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=medusa">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=medusa">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/medusa.jpg" alt="Medusa" height="350" width= "400"">
                         </a>
                         
@@ -268,11 +268,11 @@
             </div>
             <div class="col">
                     <div class="align-content-center">
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=echeveriacancan">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=echeveriacancan">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/echeveriacancan.jpg" alt="Echevena Can Can"   height="350" width= "400"">
                         </a>
                     </div>
@@ -287,11 +287,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=crownofthorns">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=crownofthorns">
-                        }
+                       <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/crownofthorns.jpg" alt="Crown of Thorns"   height="350" width= "400"">
                         </a>
                         
@@ -304,11 +304,11 @@
             <div class="col">
                 <div class="m-2 align-content-center">
                     <div>
-                        <% if(locals.user){ %>
+                        <%if(locals.user){%>
                             <a href="plant?username=<%=user.username%>&id=stringoftears">
-                        }else{
+                        <%}else{%>
                             <a href="plant?id=stringoftears">
-                        }
+                        <%}%>
                             <img class = "rounded mx-auto d-block" src="../img/succulent/stringoftears.jpg" alt="string of Tears"   height="350" width= "400"">
                         </a>
                         
