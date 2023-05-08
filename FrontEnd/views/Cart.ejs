@@ -22,20 +22,15 @@
             </nav>  
             <% } %>
     </header>
-    <script>
-        var plantAmount = parseFloat(plant.Quantity);
-        var plantPrice = parseFloat(plant.Price) * plantAmount;
-        var cartItemPrice = document.getElementById(cartItemPrice).innerHTML("price:" + plantPrice);
-    </script>
     <div id="cartItem" class="align-content-lg-center">
         <% for (plant of user.cart) { %> 
             <div>
                 <div id="cartBody">
-                    <a  href="plant?id=<%plant.PlantName%>">
+                    <a  href="plant?id=<%=plant.Picture%>">
                         <img  class = "cartImg" src="/img/<%=plant.Type + "/" + plant.Picture%>.jpg" alt=" <%= plant.PlantName %>"  height="350" width= "400">
                     </a>
                     <div class="cartItemQuantity">Quantity: <%= plant.Quantity %></div>
-                    <div class="cartItemPrice">Price: <%= plant.Price * plant.Quantity %></div>
+                    <div class="cartItemPrice">Price: $<%= parseFloat(plant.Price.substring(1)) * plant.Quantity %></div>
                 </div>
             </div>
         <% } %>
