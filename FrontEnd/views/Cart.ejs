@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Checkout</title>
 </head>
 <body  style="background: fixed white;">
@@ -24,19 +25,22 @@
     <script>
         var plantAmount = parseFloat(plant.Quantity);
         var plantPrice = parseFloat(plant.Price) * plantAmount;
-        var cartItemPrice = document.getElementsByClassName(cartItemPrice).innerHTML("price:" + plantPrice);
+        var cartItemPrice = document.getElementById(cartItemPrice).innerHTML("price:" + plantPrice);
     </script>
-    <% for (plant of user.cart) { %> 
-        <div class="cartItem">
-            <div class="cartBody">
-                <a href="plant?id=<%plant.PlantName%>">
-                    <img  class = "cartImg" src="/img/<%=plant.Type + "/" + plant.Picture%>.jpg" alt=" <%= plant.PlantName %>"  height="350" width= "400">
-                </a>
-                <div class="cartItemQuantity">Quantity: <%= plant.Quantity %></div>
-                <div class="cartItemPrice">Price: <%= plant.Price * plant.Quantity %></div>
+    <div id="cartItem" class="align-content-lg-center">
+        <% for (plant of user.cart) { %> 
+            <div>
+                <div id="cartBody">
+                    <a  href="plant?id=<%plant.PlantName%>">
+                        <img  class = "cartImg" src="/img/<%=plant.Type + "/" + plant.Picture%>.jpg" alt=" <%= plant.PlantName %>"  height="350" width= "400">
+                    </a>
+                    <div class="cartItemQuantity">Quantity: <%= plant.Quantity %></div>
+                    <div class="cartItemPrice">Price: <%= plant.Price * plant.Quantity %></div>
+                </div>
             </div>
-        </div>
-    <% } %>
-
+        <% } %>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
