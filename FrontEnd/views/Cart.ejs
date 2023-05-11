@@ -9,6 +9,7 @@
 </head>
 <body  style="background: fixed white;">
     <header>
+        <!--If the user is logged in the the url with have thier user name and they will have a cart button on the right side of screen-->
         <% if (locals.user) { %>
             <h2 class="logo">Welcome, <%= user.username %>!</h2>
             <nav class="navigation">
