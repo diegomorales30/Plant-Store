@@ -10,6 +10,7 @@
 </head>
 <body style="background: fixed white;">
     <header>
+        <!--If the user is logged in then the url will have the user name and then user will have a button that will take them to thier cart-->
         <% if (locals.user) { %>
             <h2 class="logo">Welcome, <%= user.username %>!</h2>
             <nav class="navigation">
@@ -19,7 +20,8 @@
                 <a href="http://localhost:3000/succulents?username=<%= user.username %>">Succulent</a>
                 <a href="http://localhost:3000/beddings?username=<%= user.username %>">Bedding</a>
                 <button class="btnLogin-popup" onclick="location.href='http://localhost:3000/cart?username=<%= user.username %>';" >Cart</button>
-            </nav>  
+            </nav> 
+        <!--If the user is not logged the the page will have these urls and no cart--> 
         <% } else { %>
             <h2 class="logo">Plant Store</h2>
             <nav class="navigation">
@@ -40,12 +42,14 @@
         <!--End of filter-->
 
         <!--grid-->
-    
+    <!--aligns all the items to the center of the screen-->
     <div class="container align-content-center">
         <div class="row">
             <div class="col">
+                <!--Aligns all the items in teh colum to the center-->
                 <div class="align-content-center">
                     <div>
+                    <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=marigolds" >
                     <% } else { %>
@@ -61,8 +65,10 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="align-content-center">
                     <div>
+                    <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=gazania" >
                     <% } else { %>
@@ -76,8 +82,10 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=cock'scomb" >
                     <% } else { %>
@@ -96,8 +104,10 @@
 
         <div class="row">
             <div class="col-lg-auto col-md-auto col-sm-auto">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=hypoestessplashselectmix" >
                     <% } else { %>
@@ -111,7 +121,9 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
+                 <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                 <% if (locals.user) { %>
                     <a href="plant?username=<%=user.username%>&id=mossrose" >
                 <% } else { %>
@@ -124,8 +136,10 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=geraniums" >
                     <% } else { %>
@@ -144,8 +158,10 @@
 
         <div class="row">
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=carnation" >
                     <% } else { %>
@@ -159,8 +175,10 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=columbine" >
                     <% } else { %>
@@ -175,8 +193,10 @@
                 </div>
             </div>
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div>
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=dianthus" >
                     <% } else { %>
@@ -195,8 +215,10 @@
 
         <div class="row">
             <div class="col">
+                 <!--Aligns all the items in teh colum to the center-->
                 <div class="m-2 align-content-center">
                     <div class="align-items-start">
+                     <!--If the user is logged in then the url will have the user name else the url will just have the plant id in the url-->
                     <% if (locals.user) { %>
                         <a href="plant?username=<%=user.username%>&id=doublepetunia" >
                     <% } else { %>
