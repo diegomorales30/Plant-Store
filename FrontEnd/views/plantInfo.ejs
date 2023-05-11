@@ -58,18 +58,22 @@
     <div id="plantInfo">
         <img class = "rounded mx-auto d-block" src="/img/<%=plant.Type + "/" + plant.Picture%>.jpg" alt=" <%= plant.PlantName %>"  height="350" width= "400">
         <br>
+        <!--Center the text-->
         <h1 class="text-center display-3"><%= plant.PlantName %></h1>
         <h2 class="text-center display-5"><%= plant.Price %> </h2>
         <% if (locals.user) { %>
+            <!--a box that allows the user to enter the amount of plants they want-->
         <div class="row d-flex justify-content-center">
             <input type="number" id="amountInput" class="form-control justify-content-center"style="width: 80px;"/>
         </div>
+        <!--Allows the user to put plants into shoping cart-->
         <div class="row d-flex justify-content-center">
             <button id = "order" type="button" class="btn-success" style="width: 80px;" onclick="sendToCart()">Add</button>
         </div>
         <p id="response" style="text-align: center; margin-top: 10px; margin-bottom: -5px;"></p>
         <% } %>
         <% for (sentence of plant.Advice) { %>
+            <!--Displays the plant info to the center of the website-->
             <p class="text-center display-6"><%= sentence %></p>
         <% } %>
     </div>
