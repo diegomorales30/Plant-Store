@@ -1,0 +1,411 @@
+[{
+  "_id": {
+    "$oid": "64454c3593f1a02392e6eb0c"
+  },
+  "Type": "Succulent",
+  "PlantName": "Golden Barrowl Catuse",
+  "Price": "$6.00",
+  "Quantity": 20,
+  "Advice": [
+    "Survives all seasons",
+    "Don't over water"
+  ],
+  "Picture": "goldenbarrowlcatuse",
+  "Popular": 14,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6445500d34a00b82ddfeb246"
+  },
+  "Type": "Succulent",
+  "PlantName": "Propeller",
+  "Price": "$8.00",
+  "Quantity": 15,
+  "Advice": [
+    "Leave out side in plastic container for winter",
+    "Don't over water"
+  ],
+  "Picture": "propellersucculent",
+  "Popular": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64465756d949ce284ca90307"
+  },
+  "Type": "Succulent",
+  "PlantName": "Camp Fire",
+  "Price": "$4.00",
+  "Quantity": 30,
+  "Advice": [
+    "Leave out side in plastic container for winter",
+    "Don't over water"
+  ],
+  "Picture": "campfire",
+  "Popular": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587daf29589e3ec718393f"
+  },
+  "Type": "Bedding",
+  "PlantName": "Marigolds",
+  "Price": "$.50",
+  "Quantity": 35,
+  "Advice": [
+    "Die in the winter",
+    "Reseed for the Spring",
+    "Water once a day"
+  ],
+  "Picture": "marigolds",
+  "Popular": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587e0729589e3ec7183941"
+  },
+  "Type": "Bedding",
+  "PlantName": "Gazania",
+  "Price": "1.00",
+  "Quantity": 20,
+  "Advice": [
+    "Lives through all the seasons",
+    "Water once a day"
+  ],
+  "Picture": "gazania",
+  "Popular": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587e6429589e3ec7183943"
+  },
+  "Type": "Bedding",
+  "PlantName": "Cock's Comb",
+  "Price": "1.00",
+  "Quantity": 40,
+  "Advice": [
+    "Die in the winter",
+    "Replant in the Spring",
+    "Water once a day"
+  ],
+  "Picture": "cock'scomb",
+  "Popular": 18,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587eba29589e3ec7183945"
+  },
+  "Type": "Bedding",
+  "PlantName": "Hypoestes Splash Select Mix",
+  "Price": "1.00",
+  "Quantity": 15,
+  "Advice": [
+    "Die in the winter",
+    "Reseed for the Spring",
+    "Water once a day"
+  ],
+  "Picture": "hypoestessplashselectmix",
+  "Popular": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587ee329589e3ec7183947"
+  },
+  "Type": "Bedding",
+  "PlantName": "Moss Rose Portulace",
+  "Price": "1.00",
+  "Quantity": 35,
+  "Advice": [
+    "Die in the winter",
+    "Reseed for the Spring",
+    "Water once a day"
+  ],
+  "Picture": "mossrose",
+  "Popular": 15,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64587f3629589e3ec7183949"
+  },
+  "Type": "Bedding",
+  "PlantName": "Geraniums",
+  "Quantity": 35,
+  "Advice": [
+    "Cover the plant in the winter",
+    "Don't over water"
+  ],
+  "Picture": "geraniums",
+  "Popular": 15,
+  "__v": 0,
+  "Price": "$5.00"
+},{
+  "_id": {
+    "$oid": "64587f9729589e3ec718394b"
+  },
+  "Type": "Bedding",
+  "PlantName": "Carnations",
+  "Quantity": 35,
+  "Advice": [
+    "Live through all the seasons",
+    "Water once a day"
+  ],
+  "Picture": "carnation",
+  "Popular": 18,
+  "__v": 0,
+  "Price": "$1.25"
+},{
+  "_id": {
+    "$oid": "6458802b29589e3ec718394d"
+  },
+  "Type": "Bedding",
+  "PlantName": "Dianthus",
+  "Quantity": 35,
+  "Advice": [
+    "Live through all the seasons",
+    "Water once a day"
+  ],
+  "Picture": "dianthus",
+  "Popular": 25,
+  "__v": 0,
+  "Price": "$1.00"
+},{
+  "_id": {
+    "$oid": "6458806029589e3ec718394f"
+  },
+  "Type": "Bedding",
+  "PlantName": "Double Petunia",
+  "Quantity": 35,
+  "Advice": [
+    "Die in winter",
+    "replant in the Spring",
+    "Water once a day"
+  ],
+  "Picture": "doublepetunia",
+  "Popular": 30,
+  "__v": 0,
+  "Price": "$3.00"
+},{
+  "_id": {
+    "$oid": "645883a8cada65b118a168bb"
+  },
+  "Type": "Bedding",
+  "PlantName": "Columbine",
+  "Quantity": 35,
+  "Advice": [
+    "Live through all the seasons",
+    "Water once a day"
+  ],
+  "Picture": "columbine",
+  "Popular": 19,
+  "__v": 0,
+  "Price": "$1.00"
+},{
+  "_id": {
+    "$oid": "645d9301c913ada5a229330b"
+  },
+  "Type": "Succulent",
+  "PlantName": "Jade",
+  "Price": "$4.00",
+  "Quantity": 25,
+  "Advice": [
+    "Bring indoor for winter",
+    "Don't over water"
+  ],
+  "Picture": "jade",
+  "Popular": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d934fc913ada5a229330d"
+  },
+  "Type": "Succulent",
+  "PlantName": "Echeveria",
+  "Price": "$6.00",
+  "Quantity": 30,
+  "Advice": [
+    "Leave out side in plastic container for winter",
+    "Don't over water"
+  ],
+  "Picture": "echeveria",
+  "Popular": 19,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9464c913ada5a229330f"
+  },
+  "Type": "Succulent",
+  "PlantName": "String of Perls",
+  "Price": "$10.00",
+  "Quantity": 15,
+  "Advice": [
+    "Bring in for the winter months",
+    "Dont over water the plant"
+  ],
+  "Picture": "stringofperls",
+  "Popular": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d94bac913ada5a2293311"
+  },
+  "Type": "Succulent Plants",
+  "PlantName": "Ice Plant",
+  "Price": "$4.00",
+  "Quantity": 40,
+  "Advice": [
+    "Bring in for the winter months",
+    "Dont over water the plant"
+  ],
+  "Picture": "iceplant",
+  "Popular": 10,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9691c913ada5a2293313"
+  },
+  "Type": "Succulent",
+  "PlantName": "Ruby Neckless",
+  "Price": "$10.00",
+  "Quantity": 10,
+  "Advice": [
+    "Bring in for the winter months",
+    "Dont over water the plant"
+  ],
+  "Picture": "rubyneckless",
+  "Popular": 23,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d96dac913ada5a2293315"
+  },
+  "Type": "Succulent",
+  "PlantName": "Bad Hair Day",
+  "Price": "$35.00",
+  "Quantity": 40,
+  "Advice": [
+    "Can survive all seasons",
+    "Dont over water"
+  ],
+  "Picture": "badhairday",
+  "Popular": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d97a6c913ada5a2293319"
+  },
+  "Type": "Succulent",
+  "PlantName": "Aeonium Black Rose",
+  "Price": "$5.00",
+  "Quantity": 10,
+  "Advice": [
+    "Bring in for the winter",
+    "Dont over water"
+  ],
+  "Picture": "aeoniumblackrose",
+  "Popular": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9820c913ada5a229331b"
+  },
+  "Type": "Succulent",
+  "PlantName": "Sansevieria",
+  "Price": "$8.00",
+  "Quantity": 10,
+  "Advice": [
+    "Bring in for the winter",
+    "Dont water from November - March all other months you can water"
+  ],
+  "Picture": "sansevieria",
+  "Popular": 18,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9956c913ada5a229331f"
+  },
+  "Type": "Succulent",
+  "PlantName": "Mangava",
+  "Price": "$35.00",
+  "Quantity": 25,
+  "Advice": [
+    "Can survie all seasons",
+    "Dont over water"
+  ],
+  "Picture": "mangava",
+  "Popular": 20,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d999bc913ada5a2293323"
+  },
+  "Type": "Succulent",
+  "PlantName": "Decrative Alo",
+  "Price": "$6.00",
+  "Quantity": 15,
+  "Advice": [
+    "Bring in for the winter seasons",
+    "Dont over water the plant"
+  ],
+  "Picture": "decrativealo",
+  "Popular": 23,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d99d9c913ada5a2293325"
+  },
+  "Type": "Succulent",
+  "PlantName": "Medusa",
+  "Price": "$5.00",
+  "Quantity": 35,
+  "Advice": [
+    "Bring in for the winter months",
+    "Dont over water the plant"
+  ],
+  "Picture": "medusa",
+  "Popular": 12,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9a78c913ada5a2293327"
+  },
+  "Type": "Succulent",
+  "PlantName": "Echeveria Can Can",
+  "Price": "$6.00",
+  "Quantity": 30,
+  "Advice": [
+    "Put in plactic container in winter",
+    "Dont over water the plant"
+  ],
+  "Picture": "echeveriacancan",
+  "Popular": 13,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9ad6c913ada5a2293329"
+  },
+  "Type": "Succulent",
+  "PlantName": "Crown of Thorns",
+  "Price": "$10.00",
+  "Quantity": 15,
+  "Advice": [
+    "Bring in side for winter",
+    "Dont over water the plant"
+  ],
+  "Picture": "crownofthorns",
+  "Popular": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645d9bb0c913ada5a229332b"
+  },
+  "Type": "Succulent",
+  "PlantName": "String of Tears",
+  "Price": "$10.00",
+  "Quantity": 15,
+  "Advice": [
+    "Bring in for the winter months",
+    "Dont over water the plant"
+  ],
+  "Picture": "stringoftears",
+  "Popular": 16,
+  "__v": 0
+}]
