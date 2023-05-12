@@ -10,4 +10,4 @@ ejs, express, marked, mongoose, socket.io
 The devDependencies are:
 nodemon
 
-NOTE: To properly load plant information pages, the JSON file at Plant-Store/Plant text/plants.json
+NOTE: To properly load plant information pages, the JSON file at Plant-Store/Plant text/plants.json must be imported into the local MongoDB collection
