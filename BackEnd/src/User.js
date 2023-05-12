@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const marked = require('marked')
 
+// Defined schema for user database storage
 const userSchema = new mongoose.Schema({
 
     username: {

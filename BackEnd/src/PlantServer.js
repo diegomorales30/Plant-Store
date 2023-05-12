@@ -7,16 +7,19 @@ const port = 3000;
 
 var plantModel = require("./PlantSchema");
 
+// Route to display all available succulentsfor purchase
 app.get('/succulents', async (req, res) => {
     const user = await User.findOne({username : req.query.username});     
     res.render('succulent', {user:user})
 })
 
+// Route to display all available beddings for purchase
 app.get('/beddings', async (req, res) => {
     const user = await User.findOne({username : req.query.username});     
     res.render('bedding', {user:user})
 })
 
+// POST function to add plants to database 
 app.post('/add', function(req, res) {
     var newPlant = new plantModel(req.body.plant);
     newPlant.save().then(function() {
@@ -29,19 +32,21 @@ app.post('/add', function(req, res) {
 
 // Request should be made with image name in parameters
 // Ex: http://localhost:3000/plant?id=goldenbarrowlcatuse
+// Returns the info of a plant and optionally a user to the plantInfo ejs file
+// The plant information is then displayed as a listing for purchase by the browser
 app.get("/plant", async (req, res) => {
     const user = await User.findOne({username : req.query.username});     
     const plant = await plantModel.findOne({Picture : req.query.id});
     res.render("plantInfo", {plant:plant, user:user});
 });
 
-//Ex http://localhost:3000/user?=name&&plantpid=picturename&&useramount=3
+// Ex http://localhost:3000/user?=name&plantpid=picturename&useramount=3
 // adds a plant to the user cart and the only way to add plants to a shopping cart
 // if that you have to be logged in
 app.get("/addtocart", async function(req,res) {
     // finds the plant from the data base 
     var plant = await plantModel.findOne({Picture:req.query.plantpid}).lean();
-    //finds the user from the data base
+    // finds the user from the data base
     var user = await User.findOne({username:req.query.user}).lean();
     // Gets the limit from the quanity field in the data base
     var plantlimit = plant.Quantity;

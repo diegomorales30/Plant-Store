@@ -1,5 +1,6 @@
 var mongoose = require("mongoose");
 
+// Defined schema for plant database storage
 var plantSchema = new mongoose.Schema({
     Type: String,
     PlantName: String,
@@ -12,11 +13,11 @@ var plantSchema = new mongoose.Schema({
 
 
 // Implement later, query for all bushes
-plantSchema.statics.listAllBush = function() {};
+// plantSchema.statics.listAllBush = function() {};
 // Implement later, query for all succulents
-plantSchema.statics.listAllSucculent = function() {};
+// plantSchema.statics.listAllSucculent = function() {};
 // Implement later, query for all bedded
-plantSchema.statics.listAllBedded = function() {};
+// plantSchema.statics.listAllBedded = function() {};
 
 var plantModel = mongoose.model('plant', plantSchema);
 
