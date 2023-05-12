@@ -1,12 +1,13 @@
 # Plant-Store
 Authors: Diego Morales, Cash Snell, Robert Stolworthy, Tony Ramos
-command to install socket.io and express
 
-The command that is need to install all the dependancy that we user is 
+The command that is needed to install all the dependencies that the user needs:
 npm install
 
-The dependancy are 
+The dependencies are: 
 ejs, express, marked, mongoose, socket.io
 
-The devDependencies are
+The devDependencies are:
 nodemon
+
+NOTE: To properly load plant information pages, the JSON file at Plant-Store/Plant text/plants.json
